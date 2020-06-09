@@ -20,12 +20,12 @@ export class AppComponent {
 
   modifySteps(stepsData) {
     this.steps = stepsData.map(obj => {
+      obj.stepNumber = ('0' + obj.stepNumber).slice(-2) // Append 0 if the number is less than 10
       let latestContent = obj.versionContent.reduce((a, b) => {return new Date(a.effectiveDate) > new Date(b.effectiveDate) ? a : b;})
-      obj.versionContent = latestContent;
+      obj.versionContent = latestContent; // Updated versionContent from Array to obj since there will be only one latest version
       return obj;
     })
-    this.steps.sort((a, b) => Number(a.stepNumber) - Number(b.stepNumber));
-    console.log(this.steps)
+    this.steps.sort((a, b) => Number(a.stepNumber) - Number(b.stepNumber)); // Sort by Step Number
   }
 
 }

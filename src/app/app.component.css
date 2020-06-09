@@ -8,12 +8,6 @@ svg {
     height: 20px;
     margin-left: 20%;
     padding: 10px 0px;
-  }
-  
-.image{
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-    position: relative;
-    
 }
 .container {
     height: calc(100% - 40px);
@@ -21,33 +15,26 @@ svg {
     position: absolute;
     width: 100%;
     left: 0px;
-  }
+}
 .main_content {
-    background: url("/assets/img/photo-couch.jpg") no-repeat center center fixed;
-    background-size: auto;
+    background: url("/assets/img/photo-couch_2x.jpg") no-repeat center center fixed;
+    background-size: cover;
     height: 65%;
 }
-
 .h1 {
     font-family: 'Lato';
     font-size: 28px;
     letter-spacing: 1px;
     font-weight: 100;
 }
-
 .h2 {
     font-family: 'Lato';
     font-size: 18px;
 }
-
 .h3 {
     font-family: 'Lato';
     font-size: 14px;
 }
-
-.padding_bottom20{padding-bottom: 20px;}
-.padding_right20{padding-right: 20px;}
-
 .sub-content{
     margin-left: 20%;
     position: relative; 
@@ -56,12 +43,11 @@ svg {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(1rem, 1fr));
 }
-
 @media screen and (min-width: 320px) and (max-width: 650px) {
     .sub-content{
         margin-left: 20%;
         position: relative; 
-        top: 30%; 
+        top: 20%; 
         color: white; 
         display: grid;
         grid-template-rows: repeat(auto-fit, minmax(1rem, 1fr));
@@ -110,6 +96,7 @@ button:hover {
     background-color: rgb(40, 215, 228); 
 }
 button:active {
+    background-color: rgb(233, 144, 103); 
     border: 1px solid grey;
 }
 .body_heading{
@@ -121,34 +108,29 @@ button:active {
     padding: 30px 30px 20px 30px;
     margin-left: 10%;
 }
-
 .step_content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     margin-left: 20%;
     margin-right: 10%;
 }
-
 .step_number{
     font-family: 'Lato';
     font-size: 24px;
     font-weight: 600;
     text-align: center;
 }
-
 .step_title{
     font-family: 'Lato';
     font-size: 18px;
     text-align: center;
     margin-bottom: 10px
 }
-
 .step_body {
     font-family: 'Lato';
     font-size: 12px;
     text-align: center;
-}
-
+}   
 hr {
     border: 2px solid rgb(40, 231, 183);
     border-radius: 5px;
