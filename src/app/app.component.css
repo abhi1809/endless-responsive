@@ -2,7 +2,7 @@ main {
     height: 100%;
     margin: 0;
   }
-.header { background-color: rgba(19, 18, 18, 0.89); height: 40px; width: 100%; position: absolute; top: 0px; left: 0px;}
+.header { background-color: rgba(19, 18, 18, 0.89); height: 40px; width: 100%; position: fixed; top: 0px; left: 0px; z-index: 1;}
 svg {
     fill: rgb(40, 231, 183);
     height: 20px;
