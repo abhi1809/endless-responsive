@@ -15,16 +15,18 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
-  it('should create the app', () => {
+  beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create the app', () => {
     expect(component).toBeTruthy();
   });
 
   it(`should have as title 'endless'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('endless');
+    expect(component.title).toEqual('endless');
   });
 
   it('Building list of Steps', () => {
